@@ -105,16 +105,6 @@ body {
     
 }
 
-.card{
-    border-radius: 100vh;
-    background-color: #833AB4;
-    font-weight: 600;
-    width: 700px;
-    transition: .3s;
-    min-height: 6vh;
-
-}
-
 .card-body{
     display: flex;
     flex-direction: row;
@@ -146,6 +136,31 @@ body {
     width: 50px;
     border-radius: 100%;
 }
+
+.card {
+    cursor: pointer;
+}
+
+.card {
+    border-radius: 100vh;
+    background-color: #833AB4;
+    font-weight: 600;
+    width: 700px;
+    transition: .3s;
+    min-height: 6vh;
+    box-shadow: 0px 8px 0px #000000;  /* cria a barra preta sólida embaixo */
+}
+
+.card:active {
+    transform: translateY(4px);
+    box-shadow: 0px 12px 0px #000000;
+}
+
+.card-link {
+    text-decoration: none;
+    display: block;
+} 
+
 /*parte de baixo*/
 
 .btn{
